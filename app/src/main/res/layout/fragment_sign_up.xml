@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="25dp"
+    android:paddingVertical="35dp"
+    android:background="@color/white"
+    tools:context=".fragments.SignUpFragment">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="center"
+        android:text="Ro'yhatdan o'tish"
+        android:textColor="#0F1D4C"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="35dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Ism Familiya"
+        android:textColor="#0F1D4C"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/userNameR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/edit_text_border"
+        android:fontFamily="@font/montserrat_bold"
+        android:hint="Aliyev Ali"
+        android:inputType="textPersonName"
+        android:padding="15dp"
+        android:textColor="#0F1D4C"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        tools:layout_editor_absoluteX="25dp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Email"
+        android:textColor="#0F1D4C"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userNameR" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/emailInputR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_border"
+        android:fontFamily="@font/montserrat_bold"
+        android:hint="abcde@gmail.com"
+        android:inputType="textEmailAddress"
+        android:padding="15dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#0F1D4C"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        tools:layout_editor_absoluteX="25dp" />
+
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Parol"
+        android:textColor="#0F1D4C"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailInputR" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/passwordR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_border"
+        android:fontFamily="@font/montserrat_bold"
+        android:hint="*************"
+        android:layout_marginTop="5dp"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:textColor="#0F1D4C"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        tools:layout_editor_absoluteX="25dp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Parolni takrorlang"
+        android:textColor="#0F1D4C"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordR" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/confirmPasswordR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_border"
+        android:fontFamily="@font/montserrat_bold"
+        android:hint="************"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#0F1D4C"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        tools:layout_editor_absoluteX="25dp" />
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/signUpRegBtn"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Ro'yxatdan o'tish"
+        android:textAllCaps="false"
+        android:textColor="#0F1D4C"
+        android:textSize="15sp"
+        app:backgroundTint="#B8E8F2"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="25dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

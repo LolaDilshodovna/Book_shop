@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:context=".fragments.FilterFragment">
+
+    <LinearLayout
+        android:paddingVertical="10dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/closeBtn"
+            android:layout_width="22dp"
+            android:layout_marginEnd="15dp"
+            android:layout_height="22dp"
+            android:src="@drawable/close"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:fontFamily="@font/pop_600"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:text="Filter" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="0dp"
+        app:contentPadding="20dp"
+        app:cardBackgroundColor="@color/editBgColor"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:fontFamily="@font/pop_600"
+                android:text="Rating"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/lineColor"/>
+
+            <RadioGroup
+                android:id="@+id/myRadioGr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:text="All"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/pop_400"
+                    android:buttonTint="@color/radio_button_color"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/lineColor"/>
+
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/radio_button_color"
+                    android:fontFamily="@font/pop_400"
+                    android:includeFontPadding="false"
+                    android:text="4.9+"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/lineColor"/>
+
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/radio_button_color"
+                    android:fontFamily="@font/pop_400"
+                    android:includeFontPadding="false"
+                    android:text="4.0+"
+                    android:textColor="@color/black" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="0dp"
+        app:contentPadding="20dp"
+        app:cardBackgroundColor="@color/editBgColor"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:fontFamily="@font/pop_600"
+                android:text="Genre"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/lineColor"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/lineColor"/>
+
+                <CheckBox
+                    android:id="@+id/romance"
+                    android:layout_width="match_parent"
+                    android:text="Romance"
+                    android:fontFamily="@font/pop_400"
+                    android:includeFontPadding="false"
+                    android:buttonTint="@color/radio_button_color"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/lineColor"/>
+
+                <CheckBox
+                    android:id="@+id/thriller"
+                    android:layout_width="match_parent"
+                    android:text="Thriller"
+                    android:fontFamily="@font/pop_400"
+                    android:includeFontPadding="false"
+                    android:buttonTint="@color/radio_button_color"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/lineColor"/>
+
+                <CheckBox
+                    android:id="@+id/action"
+                    android:layout_width="match_parent"
+                    android:text="Action"
+                    android:fontFamily="@font/pop_400"
+                    android:includeFontPadding="false"
+                    android:buttonTint="@color/radio_button_color"
+                    android:layout_height="wrap_content"/>
+
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/resetBtn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:cornerRadius="100dp"
+            android:backgroundTint="#FEF4E6"
+            android:textColor="@color/mainColor"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/pop_500"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:includeFontPadding="false"
+            android:text="Disable"
+            android:textAllCaps="false" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/applyBtn"
+            android:layout_width="match_parent"
+            android:textSize="16sp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/pop_500"
+            app:cornerRadius="100dp"
+            android:includeFontPadding="false"
+            android:text="Apply"
+            app:backgroundTint="@color/mainColor"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">
+        <objectAnimator
+            android:propertyName="backgroundColor"
+            android:valueTo="#FFDDDDDD"
+            android:duration="100"/>
+    </item>
+
+    <item>
+        <objectAnimator
+            android:propertyName="backgroundColor"
+            android:valueTo="#FFFFFFFF"
+            android:duration="100"/>
+    </item>
+
+</selector>

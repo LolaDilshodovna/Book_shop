@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_width="200dp"
+    android:layout_height="100dp"
+    tools:ignore="MissingDefaultResource"
+    app:cardCornerRadius="15dp">
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/genreImg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/img_3"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:id="@+id/genreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Romance"
+        android:textColor="@color/white"
+        android:fontFamily="@font/pop_500"
+        android:textSize="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="10dp"/>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:layout_marginHorizontal="25dp"
+    android:background="@drawable/corner"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:backgroundTint="@color/white"
+    android:paddingHorizontal="20dp"
+    android:paddingTop="50dp"
+    android:paddingBottom="25dp">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pop_600"
+        android:text="Sign up Successful!"
+        android:textAlignment="center"
+        android:textColor="@color/mainColor"
+        android:layout_marginTop="15dp"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:paddingHorizontal="10dp"
+        android:fontFamily="@font/pop_400"
+        android:text="Your account has been created. Please wait a moment, we are preparing books for you..."
+        android:textAlignment="center"
+        android:textColor="@color/black" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_colorFilter="@color/mainColor"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/loader" />
+
+</LinearLayout>

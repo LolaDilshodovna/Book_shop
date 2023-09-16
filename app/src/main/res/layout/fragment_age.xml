@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="25dp"
+    android:paddingVertical="35dp"
+    tools:context=".fragments.AgeFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pop_600"
+        android:text="Choose Your Age"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/pop_300"
+        android:text="Select age range for better content."
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/first"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/pop_500"
+                android:text="14-17"
+                app:backgroundTint="@color/mainColor"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:cornerRadius="100dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/second"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/pop_500"
+                android:text="25-29"
+                android:backgroundTint="@color/white"
+                app:strokeWidth="2dp"
+                app:strokeColor="@color/mainColor"
+                android:textAllCaps="false"
+                android:textColor="@color/mainColor"
+                android:textSize="15sp"
+                app:cornerRadius="100dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/third"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/pop_500"
+                android:text="35-39"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/white"
+                app:strokeColor="@color/mainColor"
+                app:strokeWidth="2dp"
+                android:textColor="@color/mainColor"
+                android:textSize="15sp"
+                app:cornerRadius="100dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/fourth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/pop_500"
+                android:text="45-49"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/white"
+                app:strokeColor="@color/mainColor"
+                app:strokeWidth="2dp"
+                android:textColor="@color/mainColor"
+                android:textSize="15sp"
+                app:cornerRadius="100dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/fifth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/pop_500"
+                android:text="18-24"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/white"
+                app:strokeColor="@color/mainColor"
+                app:strokeWidth="2dp"
+                android:textColor="@color/mainColor"
+                android:textSize="15sp"
+                app:cornerRadius="100dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/sixth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/pop_500"
+                android:text="30-34"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/white"
+                app:strokeColor="@color/mainColor"
+                app:strokeWidth="2dp"
+                android:textColor="@color/mainColor"                android:textSize="15sp"
+                app:cornerRadius="100dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/seventh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/pop_500"
+                android:text="40-44"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/white"
+                app:strokeColor="@color/mainColor"
+                app:strokeWidth="2dp"
+                android:textColor="@color/mainColor"
+                android:textSize="15sp"
+                app:cornerRadius="100dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/eights"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/pop_500"
+                android:text="> 50"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/white"
+                app:strokeColor="@color/mainColor"
+                app:strokeWidth="2dp"
+                android:textColor="@color/mainColor"
+                android:textSize="15sp"
+                app:cornerRadius="100dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/continueBtn"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/pop_500"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:cornerRadius="100dp"
+        app:backgroundTint="@color/mainColor"/>
+
+</LinearLayout>
